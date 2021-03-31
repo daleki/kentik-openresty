@@ -1,0 +1,11 @@
+name: kentik-openresty
+version: 0.1
+description: Kentik openresty
+version: TAG
+target:
+  build: ./build.sh
+docker:
+  build:
+    base: kt-build-generic-buster:master
+  run:
+    base: kt-run-generic-buster:master
